@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row" style="margin-top:30px">
+    <button class="btn btn-primary" ng-click="startreview()" ui-sref="review">Start Looking Up Stocks</button>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <h4>
+      All Stocks Looked Up:
+    </h4>
+  </div>
+  <div class="row">
+    <div class="list-group">
+      <a class="list-group-item" ng-repeat="stock in stocks" ng-click="reviewThis(stock.stockId)">{{ stock.stockName }}<span class="badge">I want to review this</span></a>
+    </div>
+  </div>
+</div>

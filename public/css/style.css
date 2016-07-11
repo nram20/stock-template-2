@@ -1,0 +1,107 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #EDEDED;
+}
+
+.topBar {
+  height: 60px;
+  width: 100%;
+  background-color: #CE8F35;
+}
+
+.noBorPad {
+  border: 0;
+  padding: 0;
+}
+
+.topBarLogo, .topBarLogo:hover, .topBarLogo:focus {
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 25px;
+  color:white;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 150%;
+}
+
+.topBarLink, .topBarLink:hover, .topBarLink:focus {
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 25px;
+  text-decoration: none;
+  color:white;
+}
+
+.topBarLogo:hover{
+  font-weight: bolder;
+}
+
+.topBarLink:hover{
+  font-weight: bolder;
+  margin-right: -3px;
+}
+
+.topBarButton {
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: transparent;
+  margin-right: 25px;
+  border: 1px solid grey;
+  padding: 5px 15px;
+  color: white;
+}
+
+.register, .register:hover, .logIn, .logIn:hover {
+  background-color: #2C6B8C;
+  border-color: transparent;
+  color:white;
+  text-decoration: none;
+}
+
+.header {
+  height: 350px;
+  background-color: white;
+}
+
+.homeHeader {
+  vertical-align: middle;
+  line-height: 350px;
+  color:black;
+  margin: 0;
+}
+
+.header>a, .header>a:hover, .header>a:focus {
+  position: relative;
+  top: -150px;
+  color:#1DBB9B;
+}
+
+.finSoon {
+  margin-left: 15px;
+}
+
+.homeLoading {
+  margin-top: 160px;
+}
+
+.loginPanel {
+  width: 500px;
+}
+
+.loginPanel {
+  width: 500px;
+}
+
+.btn.logInButton {
+  background-color:#2C6B8C;
+  color:white;
+}
+
+.loginPanelHeader {
+  margin-top: 20px;
+}
+
+.regPanel {
+  min-height: 200px;
+}

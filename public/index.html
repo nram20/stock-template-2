@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Tracker Test</title>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="/bower_components/spin.js/spin.js"></script>
+  <script src="/bower_components/angular-spinner/angular-spinner.js"></script>
+  <script src="/bower_components/ngstorage/ngStorage.js"></script>
+
+  <script src="/js/module.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/services.js"></script>
+</head>
+<body ng-app="beerApp" ng-controller="mainCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 noBorPad">
+        <div class="topBar">
+          <div class="row">
+            <div class="col-xs-6">
+              <a ui-sref="home" class="topBarLogo">STOCK TRACKER</a>
+              <a class="topBarLink" ng-if="isLoggedIn" ui-sref="allStocks">All Stocks</a>
+              <a class="topBarLink" ng-if="isLoggedIn" ui-sref="myStocks">My Stocks</a>
+              <a class="topBarLink" ng-if="isLoggedIn" ui-sref="profile">My Profile</a>
+            </div>
+            <div class="col-xs-6 text-right">
+              <a ng-if="!isLoggedIn" class="topBarButton logIn" ui-sref="login">LOG IN</a>
+              <a ng-if="!isLoggedIn" class="topBarButton register" ui-sref="register">REGISTER</a>
+              <a ng-if="isLoggedIn" class="topBarButton logIn" ng-click="logOut()">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ui-view></ui-view>
+</body>
+</html>
